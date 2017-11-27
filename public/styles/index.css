@@ -1,0 +1,61 @@
+* {
+  font-family: "Proxima Nova";
+}
+.app {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.search-form {
+  margin-top: 30px;
+}
+@media only screen and (max-width: 650px) {
+  .search-form {
+    display: none;
+  }
+}
+.awesomplete ul li {
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  font-size: 13px;
+}
+.hidden {
+  display: none;
+}
+.book h5 {
+  background: #ccc;
+  color: #666;
+  display: table-cell;
+  height: 180px;
+  text-align: center;
+  vertical-align: middle;
+  width: 180px;
+}
+h3 {
+  font-weight: bold;
+}
+p {
+  font-weight: normal;
+  margin-right: 10px;
+}
+.pagination {
+  text-align: right;
+}
+.search-option {
+  display: none;
+  list-style: none;
+  font-size: 13px;
+}
+.search-list:hover {
+  background: #cce5ff;
+  display: block;
+}
+.search-list:hover .search-option {
+  display: block;
+}
+content {
+  position: relative;
+}
+.buttonBack {
+  position: absolute;
+  top: 0;
+  right: 0;
+}

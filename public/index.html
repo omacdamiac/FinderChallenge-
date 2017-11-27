@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Finder challenge</title>
+    <meta charset="utf-8">
+    <meta viewport="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Proxima+Nova" rel="stylesheet" type="text/css">
+    <link href="/vendor/pure/pure-min.css" rel="stylesheet">
+    <link href="/vendor/awesomplete/awesomplete.css" rel="stylesheet">
+    <link href="/styles/index.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="app pure-g">
+      <header class="pure-u-1">
+        <div class="pure-u-1-3">
+          <h1 class="logo">Finder challenge</h1>
+        </div>
+        <div class="pure-u-7-24">
+          <div class="search-form">
+            <form>
+              <input class="awesomplete" type="text" id="txtSearch">
+              <input type="submit" value="Buscar" id="btnSearch" disabled="true">
+            </form>
+          </div>
+        </div>
+        <div class="pure-u-1-3">
+          <div class="search-form"><a href="#" id="btnSave">Guardar Búsqueda</a></div>
+        </div>
+      </header>
+      <aside class="filters pure-u-1-4">
+        <h3>Búsquedas guardada</h3>
+        <ul class="guar"></ul>
+        <h3>Categorías</h3>
+        <ul class="cat"></ul>
+        <h3>Idioma</h3>
+        <ul class="lang"></ul>
+        <h3>Publicación</h3>
+        <ul class="publi"></ul>
+        <h3>Presentación</h3>
+        <ul class="prese"></ul>
+      </aside>
+      <content class="pure-u-3-4">
+        <div></div>
+        <div class="pure-g book">
+          <div class="pure-u-1-3">
+            <blink>...Loading</blink>
+          </div>
+        </div>
+      </content>
+      <footer class="pure-u-1"></footer>
+    </div>
+    <script src="/vendor/underscore/underscore-min.js"></script>
+    <script src="/vendor/awesomplete/awesomplete.min.js"></script>
+    <script src="/scripts/global.js"></script>
+    <script src="/scripts/search-form.js"></script>
+    <script src="/scripts/view-Books.js"></script>
+    <script src="/scripts/app.js"></script>
+  </body>
+</html>
